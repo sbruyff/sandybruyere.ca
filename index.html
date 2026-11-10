@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The personal website of Sandy Bruyere of Couchiching First Nation, Ontario. Learn about Sandy and his community involvement.">
+  <meta name="theme-color" content="#137f83">
+  <title>Sandy Bruyere | Personal Website</title>
+  <style>
+    :root { color-scheme: light; --teal:#137f83; --teal-dark:#0e6265; --ink:#233d3c; --body:#405d59; --cream:#f7f5ef; --pale:#e7f0e9; --gold:#e3b75b; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--cream); color:var(--ink); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; }
+    a { color:inherit; }
+    a:focus-visible { outline:3px solid var(--gold); outline-offset:4px; }
+    .wrap { width:min(100% - 2.5rem, 960px); margin-inline:auto; }
+    header { background:var(--teal); color:white; }
+    .topbar { display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:1.2rem 0; }
+    .brand { font-size:1rem; font-weight:800; letter-spacing:.1em; text-decoration:none; }
+    nav { display:flex; gap:1.4rem; flex-wrap:wrap; }
+    nav a { text-decoration:none; font-size:.85rem; font-weight:600; }
+    nav a:hover { text-decoration:underline; }
+    main { padding:clamp(3rem,8vw,6rem) 0 4rem; }
+    .eyebrow { text-transform:uppercase; letter-spacing:.15em; font-size:.8rem; font-weight:800; color:var(--teal-dark); }
+    h1 { font-size:clamp(3rem,8vw,5.2rem); letter-spacing:-.055em; line-height:1.08; margin:.6rem 0 .5rem; }
+    h2 { font-size:clamp(1.5rem,4vw,2rem); line-height:1.2; margin:0 0 1rem; }
+    .location { font-size:1.1rem; color:var(--body); margin:0 0 2.3rem; }
+    .gold-rule { width:72px; height:5px; background:var(--gold); border-radius:8px; margin:0 0 2.5rem; }
+    section { scroll-margin-top:2rem; }
+    .intro { background:var(--pale); border-radius:18px; padding:clamp(1.5rem,5vw,2.5rem); margin-bottom:3.5rem; }
+    .intro p { font-size:1.13rem; max-width:66ch; margin:0; }
+    .content { max-width:72ch; }
+    .content p { color:var(--body); font-size:1.07rem; }
+    .contact { background:var(--pale); border-radius:18px; padding:2rem; margin-top:3.5rem; }
+    .contact p { margin-bottom:0; color:var(--body); }
+    footer { background:var(--teal); color:white; padding:1.5rem 0; text-align:center; font-size:.88rem; }
+    @media (max-width:540px) { .topbar { align-items:flex-start; flex-direction:column; } nav { gap:1rem; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="#home">SANDY BRUYERE</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">ABOUT</a>
+        <a href="#community">COMMUNITY</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+  <main id="home" class="wrap">
+    <p class="eyebrow">Welcome to my website</p>
+    <h1>Sandy Bruyere</h1>
+    <p class="location">Couchiching First Nation, Ontario</p>
+    <div class="gold-rule" aria-hidden="true"></div>
+    <section class="intro" id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">A little about me</h2>
+      <p>Welcome to my personal website. This is a place to share a little about myself, my involvement in the community and the work I've been part of over the years.</p>
+    </section>
+    <section class="content" id="community" aria-labelledby="community-heading">
+      <h2 id="community-heading">Community involvement</h2>
+      <p>I've served on Couchiching First Nation Chief &amp; Council since 2018. My experience includes community governance, lands and resources, environmental initiatives and community events.</p>
+    </section>
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>More personal information, photographs and contact details will be added here soon.</p>
+    </section>
+  </main>
+  <footer><div class="wrap">© 2026 Sandy Bruyere · sandybruyere.ca</div></footer>
+</body>
+</html>
